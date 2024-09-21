@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rugs and Carpets Section</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Internal CSS -->
+    <style>
+        .rugs-carpets-section {
+            background-image: url('path_to_bg_image.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .overlay3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        .rugs-carpets-section .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .card {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05); 
+        }
+
+
+      .learn {
+    width: 120px;
+    background: #AC8953;
+    color: white;
+    padding: 6px;
+    border-color: transparent;
+    border-radius: 3px;
+    transition: 0.2s ease-in;
+    }
+
+     .learn:hover {
+    background-color: white;
+    color: #AC8953;
+      }
+
+        @media (max-width: 768px) {
+            .rugs-carpets-section {
+                padding: 40px 0;
+            }
+        }
+        
+        a{
+          text-decoration: none !important;
+        }
+        
+footer {
+
+background-color: #18191B;
+color: #ccc;
+padding: 40px 0 20px;
+font-family: 'Open Sans', sans-serif;
+}
+
+.footer-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.footer-about {
+width: 200px;
+margin-bottom: 15px;
+}
+
+.footer-about p {
+font-size: 14px;
+line-height: 1.6;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-about h3,
+.footer-social h3 {
+margin-bottom: 20px;
+font-size: 18px;
+color: #fff;
+}
+
+.footer-links ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-links li {
+margin: 8px 0;
+}
+
+.footer-links a {
+color: #ccc;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+color: #AC8953;
+}
+
+.footer-contact p {
+margin: 8px 0;
+font-size: 14px;
+color: white;
+}
+
+.footer-contact a {
+color: white;
+text-decoration: none;
+}
+
+.footer-contact i {
+color: #AC8953;
+margin-right: 20px;
+font-size: 20px;
+padding: 5px;
+}
+
+.footer-social .social-icons a {
+display: inline-block;
+background-color: #222;
+width: 40px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+color: #ccc;
+font-size: 18px;
+transition: background-color 0.3s ease, color 0.3s ease;
+margin-right: 10px;
+}
+
+.footer-social .social-icons a:hover {
+background-color: #AC8953;
+color: #fff;
+}
+
+.footer-bottom {
+background-color: #18191B;
+padding: 15px 0;
+margin-top: 20px;
+}
+
+.footer-bottom p {
+margin: 0;
+font-size: 14px;
+color: #777;
+
+}
+
+    </style>
+</head>
+<body>
+  
+      <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="#">
+            <img src="IMG_20240918_230044-removebg-preview.png" width="40" height="39" class="d-inline-block align-top " alt="Brand Logo">Home Styler
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Furniture</a><hr>
+                        <a class="dropdown-item" href="#">Kitchen</a><hr>
+                        <a class="dropdown-item" href="#">Lighting</a><hr>
+                        <a class="dropdown-item" href="#">Decor</a><hr>
+                        <a class="dropdown-item" href="#">Bathroom</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<section class="rugs-carpets-section" style="position: relative;">
+    <div class="overlay3"></div>
+    <div class="content text-center text-white">
+        <h2 class="section-title">Rugs and Carpets</h2>
+        <p>Find the perfect rugs and carpets to enhance your interior decor.</p>
+    </div>
+</section>
+
+<!-- Cards for Rugs and Carpets -->
+<section class="container my-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="carpet1.jpg" class="card-img-top" alt="Rug 1">
+                <div class="card-body">
+                    <h5 class="card-title">Lahome Boho Tribal Area Rug- 5x7 Large Washable</h5>
+                    <p class="card-text">Luxurious and comfortable carpet for your living room.</p>
+                    <a href="buy.html" class="learn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="carpet2.jpg" class="card-img-top" alt="Rug 2">
+                <div class="card-body">
+                    <h5 class="card-title">Superior Indoor Area Rug, Plush Carpet Cover, Traditional Oriental Medallion.</h5>
+                    <p class="card-text">Beautiful carpet to complement any decor style.</p>
+                    <a href="buy2.html" class="learn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="carpet3.jpg" class="card-img-top" alt="Rug 3">
+                <div class="card-body">
+                    <h5 class="card-title">Superior Indoor Area Rug, Plush Carpet Cover, for Kids or Pets, Hallway, Entryway</h5>
+                    <p class="card-text">carpet that bring warmth and texture to your space.</p>
+                    <a href="buy3.html" class="learn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="rugp2.jpg" class="card-img-top" alt="Rug 4">
+                <div class="card-body">
+                    <h5 class="card-title">Noahas Ultra Soft Fluffy Bedroom Rugs Kids Room</h5>
+                    <p class="card-text">Stylish rugs to elevate your home interior.</p>
+                    <a href="buy4.html" class="learn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="rugp1.jpg" class="card-img-top" alt="Rug 5">
+                <div class="card-body">
+                    <h5 class="card-title">Noahas Abstract Shaggy Rug for Bedroom Ultra Soft Fluffy Carpets for Kids Nursery Teens</h5>
+                    <p class="card-text">Elegant designs that offer both beauty and comfort.</p>
+                    <a href="buy5.html" class="learn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="rugp3.jpg" class="card-img-top" alt="Rug 6">
+                <div class="card-body">
+                    <h5 class="card-title">Noahas Super Soft Modern Shag Area Rugs Fluffy Living Room Carpet Comfy Bedroom</h5>
+                    <p class="card-text">High-quality rugs perfect for any room in your home.</p>
+                    <a href="buy6.html" class="learn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>We are committed to delivering high-quality interior design solutions tailored to your needs.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#menu">Home</a></li>
+          <li><a href="#locations">About Us</a></li>
+          <li><a href="#contact">Products</a></li>
+          <li><a href="#about">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fa fa-map-marker"></i>Street Lake, FL 12345</p>
+        <p><i class="fa fa-envelope"></i><a href="#">info@homestyler.com</a></p>
+        <p><i class="fa fa-phone"></i> <a href="#">(123) 456-7890</a></p>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Home Styler. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

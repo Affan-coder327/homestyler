@@ -1,0 +1,6 @@
+var wati_chatscript_url = 'https://wati-integration-prod-service.clare.ai/ShopifyWidget/shopifyWidget.js'; 
+var wati_script = document.createElement('script'); wati_script.type = 'text/javascript'; wati_script.async = true; wati_script.src = wati_chatscript_url; 
+var wati_optionStr = `{"enabled":true,"chatButtonSetting":{"backgroundColor":"#4dc247","ctaText":"","ctaIconWATI":false,"borderRadius":"25","marginLeft":"20","marginBottom":"20","marginRight":"15","position":"right"},"brandSetting":{"brandName":"Urban Galleria","brandSubTitle":"Typically replies within minutes","brandImg":"https://app-server.wati.io/data/logo/urban-galleria-home.myshopify.com.png?62265","brandImgData":null,"welcomeText":"Hello!\\n\\nUrban Galleria is Pakistan's 1st ever online lifestyle store.\\n\\nWould you like some assistance?","backgroundColor":"#13675c","ctaText":"Start Chat","borderRadius":"25","autoShow":false,"phoneNumber":"+923168887843","messageText":null}}`;
+var wati_options = JSON.parse(wati_optionStr);
+wati_script.onload = function () { CreateWhatsappChatWidget(wati_options); }; 
+var wati_script_tag = document.getElementsByTagName('script')[0]; wati_script_tag.parentNode.insertBefore(wati_script, wati_script_tag); 

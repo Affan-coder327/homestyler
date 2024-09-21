@@ -1,0 +1,566 @@
+nav a{
+    font-weight: 600 !important;
+    color: #ffff !important;
+}
+
+.welcome-section {
+    height: 400px;
+    position: relative;
+    background-image: url('images/bathroom.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.welcome-content {
+    position: relative;
+    color: white;
+    padding: 20px;
+}
+
+.welcome-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.welcome-content p {
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    background-color: #AC8953;
+    color: white;
+    margin: 0 10px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: white;
+    color: #AC8953;
+}
+
+
+.section {
+    padding: 50px 0;
+    background-color: #18191B;
+    border-color: transparent;
+}
+.section img {
+    width: 100%;
+    height: auto;
+}
+.text {
+    padding: 20px;
+    color: #AC8953;
+}
+.learn {
+    width: 120px;
+    background: #AC8953;
+    color: white;
+    padding: 6px;
+    border-color: transparent;
+    border-radius: 3px;
+    transition: 0.2s ease-in;
+}
+.learn:hover {
+    background-color: white;
+    color: #AC8953;
+}
+.mission-vision {
+    padding: 20px;
+}
+.mission-vision div {
+    background-color: #303233;
+    padding: 20px;
+    border-radius: 5px;
+}
+.about-us-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-us {
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .about-us-img {
+        height: auto;
+    }
+}
+
+.our-work-section {
+padding: 50px 0;
+background-color: #18191B;
+}
+
+.our-work-title {
+text-align: center;
+color: white;
+padding-bottom: 30px;
+}
+
+.card-container1 {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+justify-content: center;
+}
+
+.card1 {
+position: relative;
+overflow: hidden;
+border: none;
+width: 300px;
+height: 200px;
+}
+
+.card1 img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.card-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+text-align: center;
+padding: 20px;
+}
+
+.card1:hover .card-overlay {
+opacity: 1;
+}
+
+@media (max-width: 768px) {
+.card1 {
+width: 100%;
+height: auto;
+}
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.product-section {
+    position: relative;
+    height: 500px; /* Adjust based on your needs */
+    background: url('path/to/background-image.jpg') no-repeat center center/cover;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Blackish overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.heading h2 {
+    color: white; 
+    font-size: 2em; 
+    margin:0;
+}
+
+.content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+}
+
+.view-btn {
+    display: block;
+    padding: 10px;
+    background: #ac8953;
+    color: white;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+
+.view-btn:hover {
+    background: white; 
+    color: #ac8953;
+}
+
+
+
+.customer-reviews-section {
+padding: 50px 0;
+background-color: #18191B;
+}
+
+.customer-reviews-title {
+text-align: center;
+color: white;
+padding-bottom: 20px;
+}
+
+.review-container {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+justify-content: center;
+}
+
+.review-card {
+background-color: white;
+color: black;
+border-radius: 8px;
+padding: 20px;
+margin: 15px;
+height: 250px; 
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.review-card p {
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+.review-card .reviewer {
+font-weight: bold;
+}
+
+.review-card .review-text {
+font-style: italic;
+}
+
+@media (max-width: 768px) {
+.review-card {
+width: 100%;
+height: auto;
+}
+}
+
+.contact-section {
+position: relative;
+padding: 50px 0;
+background-image: url('bg.jpeg'); 
+background-size: cover;
+background-position: center;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5); 
+z-index: 1;
+}
+
+.container {
+position: relative;
+z-index: 2; 
+}
+
+.text-section {
+text-align: left;
+margin-bottom: 30px;
+}
+
+.text-section h2 {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 20px;
+color: white;
+}
+
+.text-section p {
+font-size: 18px;
+margin-bottom: 20px;
+color: white;
+}
+
+.text-section .btn-primary {
+background-color: #AC8953;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+}
+
+.form-section {
+text-align: center;
+}
+
+.form-container {
+background-color: white;
+padding: 30px;
+border-radius: 5px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+font-size: 28px;
+margin-bottom: 20px;
+color: #AC8953;
+}
+
+.form-control {
+width: 100%;
+background-color: transparent;
+border: none;
+border-bottom: 2px solid #AC8953;
+margin-bottom: 20px;
+border-radius: 0;
+padding: 10px;
+}
+
+.no-border {
+border: none;
+border-bottom: 2px solid #AC8953;
+}
+
+.form-row {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.form-group {
+flex: 1;
+}
+
+.form-group label {
+font-size: 14px;
+font-weight:400;
+text-align: left;
+color: #333;
+display: block;
+margin-bottom: 5px;
+}
+
+textarea.form-control {
+height: auto;
+}
+
+
+@media (max-width: 768px) {
+.form-container {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.form-group {
+width: 100%;
+margin-bottom: 1rem; 
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+}
+}
+
+
+footer {
+background-color: #18191B;
+color: #ccc;
+padding: 40px 0 20px;
+font-family: 'Open Sans', sans-serif;
+}
+
+.footer-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.footer-about {
+width: 200px;
+margin-bottom: 15px;
+}
+
+.footer-about p {
+font-size: 14px;
+line-height: 1.6;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-about h3,
+.footer-social h3 {
+margin-bottom: 20px;
+font-size: 18px;
+color: #fff;
+}
+
+.footer-links ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-links li {
+margin: 8px 0;
+}
+
+.footer-links a {
+color: #ccc;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+color: #AC8953;
+}
+
+.footer-contact p {
+margin: 8px 0;
+font-size: 14px;
+color: white;
+}
+
+.footer-contact a {
+color: white;
+text-decoration: none;
+}
+
+.footer-contact i {
+color: #AC8953;
+margin-right: 20px;
+font-size: 20px;
+padding: 5px;
+}
+
+.footer-social .social-icons a {
+display: inline-block;
+background-color: #222;
+width: 40px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+color: #ccc;
+font-size: 18px;
+transition: background-color 0.3s ease, color 0.3s ease;
+margin-right: 10px;
+}
+
+.footer-social .social-icons a:hover {
+background-color: #AC8953;
+color: #fff;
+}
+
+.footer-bottom {
+background-color: #18191B;
+padding: 15px 0;
+margin-top: 20px;
+}
+
+.footer-bottom p {
+margin: 0;
+font-size: 14px;
+color: #777;
+}
+
+.image-section {
+  position: relative;
+  background-image: url('images/bathroom.jpg');
+  background-size: cover;
+  background-position: bottom;
+  height: 400px; 
+}
+
+.overlay2 {
+  background-color: rgba(0, 0, 0, 0.5); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.image-section h2{
+  font-size: 60px;
+}
+
+.all-cards{
+  justify-content: space-evenly;
+}
+
+a{
+  text-decoration: none ;
+}
+
+
+.bathroom img.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}

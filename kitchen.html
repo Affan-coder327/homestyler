@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Appliances</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .arts-mirrors-section {
+            background-image: url('c2.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .overlay5 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        .arts-mirrors-section .content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 36px;
+        }
+
+        .card {
+            
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+        }
+
+        @media (max-width: 768px) {
+            .arts-mirrors-section {
+                padding: 40px 0;
+            }
+        }
+
+        .learn {
+            width: 120px;
+            background: #AC8953;
+            color: white;
+            padding: 6px;
+            border-color: transparent;
+            border-radius: 3px;
+            transition: 0.2s ease-in;
+        }
+
+        .learn:hover {
+            background-color: white;
+            color: #AC8953;
+        }
+
+        footer {
+            background-color: #18191B;
+            color: #ccc;
+            padding: 40px 0 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-about {
+            width: 200px;
+            margin-bottom: 15px;
+        }
+
+        .footer-about p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-links h3,
+        .footer-contact h3,
+        .footer-about h3,
+        .footer-social h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin: 8px 0;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #AC8953;
+        }
+
+        .footer-contact p {
+            margin: 8px 0;
+            font-size: 14px;
+            color: white;
+        }
+
+        .footer-contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-contact i {
+            color: #AC8953;
+            margin-right: 20px;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .footer-social .social-icons a {
+            display: inline-block;
+            background-color: #222;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            color: #ccc;
+            font-size: 18px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .footer-social .social-icons a:hover {
+            background-color: #AC8953;
+            color: #fff;
+        }
+
+        .footer-bottom {
+            background-color: #18191B;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 14px;
+            color: #777;
+        }
+
+        a{
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+<body>
+  
+      <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="#">
+         <img src="IMG_20240918_230044-removebg-preview.png" width="40" height="39" class="d-inline-block align-top " alt="Brand Logo">Home Styler
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Furniture</a><hr>
+                        <a class="dropdown-item" href="#">Kitchen</a><hr>
+                        <a class="dropdown-item" href="#">Lighting</a><hr>
+                        <a class="dropdown-item" href="#">Decor</a><hr>
+                        <a class="dropdown-item" href="#">Bathroom</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<section class="arts-mirrors-section">
+    <div class="overlay5"></div>
+    <div class="content">
+        <h2 class="section-title">Kitchen Appliances</h2>
+        <p>Discover a wide range of modern and stylish kitchen essentials.</p>
+    </div>
+</section>
+
+
+<section class="container my-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="cabinet.jpeg" class="card-img-top" alt="kitchen 1">
+                <div class="card-body">
+                    <h5 class="card-title">Cabinet And Pantries</h5>
+                    <p class="card-text">Stunning piece to enhance your Kitchen.</p>
+                    <a href="cabinet.html" class="learn">View More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="counter.jpg" class="card-img-top" alt="Art/Mirror 2"> 
+                <div class="card-body">
+                    <h5 class="card-title">Countertops</h5>
+                    <p class="card-text">Elegant design perfect for any kitchen.</p>
+                    <a href="counter.html" class="learn">View More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="sink.jpeg" class="card-img-top" alt="Art/Mirror 3">
+                <div class="card-body">
+                    <h5 class="card-title">Sinks And Faucets</h5>
+                    <p class="card-text">Artistic touch to make your space and kitchen unique.</p>
+                    <a href="sinks.html" class="learn">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row g-4 mt-4">
+        <!-- Second Row of Cards (3 cards) -->
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="cart.jpeg" class="card-img-top" alt="Art/Mirror 4"> 
+                <div class="card-body">
+                    <h5 class="card-title">Kitchen Island and Carts</h5>
+                    <p class="card-text">Modern design to complement any Kitchen.</p>
+                    <a href="carts.html" class="learn">View More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="images (9).jpeg" class="card-img-top" alt="Art/Mirror 5"> 
+                <div class="card-body">
+                    <h5 class="card-title">Backsplashes</h5>
+                    <p class="card-text">Unique pieces to add character to your space and Kitchen.</p>
+                    <a href="backsplash.html" class="learn">View More</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We are committed to delivering high-quality interior design solutions tailored to your needs.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#menu">Home</a></li>
+                <li><a href="#menu">About</a></li>
+                <li><a href="#menu">Products</a></li>
+                <li><a href="#menu">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 1234 Street Name, City, Country</p>
+            <p><i class="fas fa-phone"></i> +1 (234) 567-8901</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom text-center">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

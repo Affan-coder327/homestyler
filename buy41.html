@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart Page</title>
+<link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Internal CSS for additional styling -->
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .product-details {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .product-details img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+        }
+        .product-info {
+            flex: 1;
+        }
+        .product-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .product-info p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .btn-group {
+            margin-top: 20px;
+        }
+        .btn-group .btn {
+            margin-right: 10px;
+        }
+        .delivery-info {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .delivery-info img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        a{
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+<body>
+  
+      <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="#">
+            <img src="IMG_20240918_230044-removebg-preview.png" width="40" height="39" class="d-inline-block align-top " alt="Brand Logo">Home Styler
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Furniture</a><hr>
+                        <a class="dropdown-item" href="#">Kitchen</a><hr>
+                        <a class="dropdown-item" href="#">Lighting</a><hr>
+                        <a class="dropdown-item" href="#">Decor</a><hr>
+                        <a class="dropdown-item" href="#">Bathroom</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Product Image -->
+        <div class="col-md-4">
+            <img src="counter5.jpg" alt="Product Image" width="100%" height="90%">
+        </div>
+        <!-- Product Details -->
+        <div class="col-md-8">
+            <div class="product-details">
+                <div class="product-info">
+                <h2>Art3d 120"x17.3" Self-Adhesive Wallpaper, Peel and Stick Grey Marble Paper, Matt</h2>
+                    <p class="price" style="color: #ac8953; font-size: xx-large;">2700 PKR</p>
+                    <p>Comfortable and stylish Countertop for any kitchen.</p>
+                </div>
+            </div>
+            <!-- Delivery Information -->
+            <div class="delivery-info">
+                <img src="truck.avif" alt="Truck Icon">
+                <span style="font-size: x-large;">FREE DELIVERY</span>
+            </div>
+            <!-- Add to Cart and Wishlist Buttons -->
+            <div class="btn-group">
+                <button class="learn">Add to Cart</button>
+                <button class="btn btn-outline-light" style="margin-left: 20px; color: #ac8953 !important; border-radius: 5px;">Add to Wishlist</button>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>We are committed to delivering high-quality interior design solutions tailored to your needs.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#menu">Home</a></li>
+          <li><a href="#locations">About Us</a></li>
+          <li><a href="#contact">Products</a></li>
+          <li><a href="#about">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fa fa-map-marker"></i>Street Lake, FL 12345</p>
+        <p><i class="fa fa-envelope"></i><a href="#">info@homestyler.com</a></p>
+        <p><i class="fa fa-phone"></i> <a href="#">(123) 456-7890</a></p>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Home Styler. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
